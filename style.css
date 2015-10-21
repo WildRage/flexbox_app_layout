@@ -31,9 +31,9 @@ a.button {
  
  
 .app-wrap {
-  max-width:540px;
-  height: 90vh;
-  margin: 5vh auto 5vh auto;
+/*  max-width: 540px; */
+  height: 100vh;
+ /* margin: 5vh auto 5vh auto; */
   border:10px solid rgba(0,0,0,0.8);
   border-bottom-width: 70px;
   border-radius:10px;
@@ -62,6 +62,7 @@ a.button {
   border-left:1px solid rgba(0,0,0,0.1);
   background:#EFCA51;
   color:rgba(0,0,0,0.5);
+    font-size: 3rem;
 }
  
 .icon-bar a:first-child {
@@ -88,6 +89,7 @@ a.button {
   background:#F0CB45;
   color:rgba(0,0,0,0.5);
   padding:1rem;
+  font-size: 3irem;
 }
  
  
@@ -102,3 +104,30 @@ a.button {
 /*
   Overall Layout
 */
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-wrap > * {
+    flex:1 1 auto;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    overflow-y: scroll;
+}
+
+.icon-bar {
+    display: flex;
+}
+
+.icon-bar a {
+    flex: 1;
+}
